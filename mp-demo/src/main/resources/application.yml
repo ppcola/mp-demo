@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: mp-demo
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mp?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  type-aliases-package: com.example.mp.entity # 别名扫描包
+  global-config:
+    db-config:
+      id-type: auto
